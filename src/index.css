@@ -1,0 +1,262 @@
+@font-face {
+  font-family: "sfPro";
+  src: url("./assets/fonts/SF-Pro-Text-Medium.otf") format("opentype");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-weight: normal;
+  font-family: "sfPro";
+  text-decoration: none;
+}
+
+body {
+  background-color: black;
+}
+
+/* Heather */
+
+.heather {
+  background-color: rgb(0, 0, 0);
+  position: fixed;
+  padding: 20px 450px 30px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.heather__logo--text {
+  font-size: 20px;
+  letter-spacing: 5px;
+  position: absolute;
+}
+
+.heather__logo--image {
+  width: 40px;
+  margin-right: -10px;
+}
+
+a {
+  color: white;
+}
+
+.heather__links {
+  list-style: none;
+  display: flex;
+  margin-left: 200px;
+  font-size: 14px;
+}
+
+.heather__links li {
+  letter-spacing: 2px;
+  margin-left: 26px;
+  padding: 5px 10px;
+  background-color: black;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.heather__links--search {
+  background-color: rgb(48, 48, 48);
+  color: rgba(255, 255, 255, 0.548);
+  border: none;
+  padding: 8px 60px 8px 5px;
+  border-radius: 20px;
+  margin-left: 5px;
+}
+
+#root {
+  height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
+
+.heather-vertical {
+  padding: 70px 30px 10px;
+  margin-top: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-direction: column;
+  color: white;
+  width: 34svh;
+}
+
+.heather-vertical__links {
+  list-style: none;
+  margin-top: 20px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-align: left;
+  align-items: inherit;
+}
+
+.heather-vertical__links li {
+  margin-top: 15px;
+  letter-spacing: 2px;
+  padding: 10px 100px 20px 10px;
+  border-radius: 5px;
+  transition: all 1s ease-in-out;
+}
+
+.heather-vertical__links li:hover {
+  background: linear-gradient(
+    to top left,
+    rgb(14, 14, 14) 40%,
+    rgba(34, 34, 34, 0.979)
+  );
+}
+
+/* Music Detail */
+
+.music-detail__container {
+  background-color: black;
+  position: fixed;
+  right: 0;
+  height: 109svh;
+  width: 60svh;
+  border-radius: 10px;
+  padding: 5px 5px 5px 5px;
+  margin-top: 90px;
+  margin-bottom: 300px;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
+}
+
+.music-detail__container a:hover {
+  text-decoration: underline;
+}
+.music-detail__container p {
+  font-size: 14px;
+  text-align: left;
+  padding: 12px 0px 0px 0px;
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+}
+
+.music-detail__container img {
+  width: 40svh;
+  border-radius: 3px;
+  margin-top: 0px;
+  display: flex;
+  align-items: end;
+}
+
+.music-detail__container--music-control {
+  width: 205px;
+  border-radius: 10px;
+  margin-top: 15px;
+  display: flex;
+  align-items: end;
+  text-align: end;
+}
+
+/* Banner */
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vh;
+  margin-top: -370px;
+  margin-left: 240px;
+}
+
+.banner img {
+  width: 110svh;
+}
+
+/* Main */
+
+.main {
+  padding: 20px;
+  margin: 0px 10px 10px;
+  border-radius: 10px;
+  flex: 1;
+  color: white;
+  font-size: 13px;
+}
+
+.main__texts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: inherit;
+  margin-top: 15px;
+  margin-left: 190px;
+  letter-spacing: 2px;
+  font-size: 120%;
+}
+
+.main__links {
+  color: inherit;
+  letter-spacing: 2px;
+  text-decoration: none;
+  margin-right: 320px;
+}
+
+.main__links:hover {
+  text-decoration: underline;
+}
+
+/* itemlist */
+
+.item-list__container {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(10svh, 21svh));
+  gap: 10px;
+  margin-top: 26px;
+  margin-left: 180px;
+}
+
+/* single-item */
+
+.single-item {
+  background-color: rgba(0, 0, 0, 0.363);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 17svh;
+  height: 22svh;
+  margin: 0px;
+  border-radius: 10px;
+  margin-right: 200px;
+}
+
+.single-item:hover {
+  background-color: rgba(63, 63, 63, 0.445);
+}
+
+.single-item img {
+  width: 14svh;
+  height: 14svh;
+  border-radius: 30px;
+  margin-top: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.397);
+}
+
+.single-item a {
+  margin-top: 10px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.single-item a:hover {
+  text-decoration: underline;
+}
+
+.single-item__sub {
+  color: rgba(255, 255, 255, 0.575);
+  margin-top: 5px;
+  text-align: left;
+  letter-spacing: 2px;
+  font-size: 10px;
+}
