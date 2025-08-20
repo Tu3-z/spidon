@@ -3,17 +3,20 @@ import Heather from "./Heather";
 import MusicDetail from "./MusicDetail";
 import bannerFeatured from "../assets/Banners/bannerHyperpop.png";
 import ItemList from "./ItemList";
+import VerticalHeather from "./VerticalHeather";
 
 const Main = ({ artist }) => {
   return (
     <>
       <Heather />
+      <VerticalHeather />
       <MusicDetail />
       <div className="banner">
         <a href="#">
           <img src={bannerFeatured} alt="" />
         </a>
       </div>
+      <div className="main"></div>
       <ItemList
         tittle="Artists"
         items={5}

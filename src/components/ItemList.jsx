@@ -12,10 +12,14 @@ const shuffleArray = (array) => {
   return shuffled;
 };
 
-const ItemList = ({ tittle, items, path, idpath, type }) => {
+const ItemList = ({ tittle, items, path, idpath, type, columns = 5 }) => {
   const sourceArray = type === "artist" ? artistArray : songsArray;
 
   const shuffledArray = shuffleArray(sourceArray);
+
+  const containerClass = `item-list__container ${
+    columns === 8 ? "item-list__container eight-grid" : "item-list__container"
+  }`;
 
   return (
     <div className="main">
@@ -25,7 +29,7 @@ const ItemList = ({ tittle, items, path, idpath, type }) => {
           Show all
         </a>
       </div>
-      <div className="item-list__container">
+      <div className={containerClass}>
         {shuffledArray.slice(0, items).map((currentObj, index) => (
           <SingleItem
             idpath={idpath}

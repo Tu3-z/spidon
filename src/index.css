@@ -20,12 +20,14 @@ body {
 
 .heather {
   background-color: rgb(0, 0, 0);
+  width: 100%;
   position: fixed;
   padding: 20px 450px 30px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: white;
+  z-index: 1;
 }
 
 .heather__logo--text {
@@ -165,7 +167,7 @@ a {
   align-items: center;
   justify-content: center;
   width: 100vh;
-  margin-top: -370px;
+  margin-top: -270px;
   margin-left: 240px;
 }
 
@@ -216,10 +218,16 @@ a {
   margin-left: 180px;
 }
 
+.item-list__container.eight-grid {
+  display: grid;
+  grid-template-columns: repeat(8, 11vw);
+  margin-top: 8vh;
+  margin-left: 2vw;
+}
+
 /* single-item */
 
 .single-item {
-  background-color: rgba(0, 0, 0, 0.363);
   padding: 10px;
   display: flex;
   align-items: center;
@@ -259,4 +267,65 @@ a {
   text-align: left;
   letter-spacing: 2px;
   font-size: 10px;
+}
+
+.tracks-tittle {
+  display: flex;
+  flex-direction: row;
+}
+
+.tracks-tittle__img {
+  width: 33vw;
+  z-index: 0;
+}
+.tracks-tittle__img--minor {
+  width: 60vw;
+  height: 18vw;
+  margin-top: 27vh;
+}
+
+.tracks-container {
+  background-image: url(./assets/images/noise.png);
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  margin: 1vw;
+  margin-top: -20vh;
+}
+
+.placa-wrapper {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+}
+
+.corda-e-placa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.corda {
+  width: 2px;
+  background: #aaa;
+  transition: height 0.3s ease;
+}
+
+.placa {
+  background: #4a3f31;
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  font-family: sans-serif;
+  text-align: center;
+  user-select: none;
+}
+
+.conteudo {
+  margin-top: 10px;
+  font-size: 0.85rem;
+  opacity: 0.95;
 }

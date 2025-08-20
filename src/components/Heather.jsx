@@ -7,9 +7,9 @@ const Heather = () => {
   return (
     <>
       <nav className="heather">
-        <a href="" className="heather__logo--text">
+        <Link to="/" className="heather__logo--text">
           SpidOn
-        </a>
+        </Link>
         <ul className="heather__links">
           <li>
             <a href="">Favorite tracks</a>
@@ -24,23 +24,6 @@ const Heather = () => {
               className="heather__links--search"
               placeholder="What do you want, bro?"
             />
-          </li>
-        </ul>
-      </nav>
-      <nav className="heather-vertical">
-        <p>Browse Music</p>
-        <ul className="heather-vertical__links">
-          <li>
-            <a href="">Home</a>
-          </li>
-          <li>
-            <a href="">Artists</a>
-          </li>
-          <li>
-            <a href="">Albums</a>
-          </li>
-          <li>
-            <Link to="/tracks">Tracks</Link>
           </li>
         </ul>
       </nav>
